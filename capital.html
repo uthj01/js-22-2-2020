@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>capital</title>
+</head>
+<body>
+<input type="text" name="" id="abc">
+<input type="button" onclick="capital()" value="submit">
+<p id="d"></p>
+</body>
+<script>
+	function capital(a){
+		var str=document.getElementById("abc").value;
+		var z=str[0].toUpperCase()+str.slice(1);
+		document.getElementById("d").innerHTML=z;
+	}
+</script>
+</html>

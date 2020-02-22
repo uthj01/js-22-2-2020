@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>radio</title>
+</head>
+<body>
+	<form name="myForm" onsubmit="return myFun()">
+		<input type="radio" name="course">UI<br>
+		<input type="radio" name="course">java<br>
+		<input type="radio" name="course">digital marketing<br>
+		<p id="message"></p><br>
+		<input type="submit" value="submit">
+	</form>
+
+</body>
+<script>
+	function myFun(){
+		var a=document.myForm.course;
+		for(i=0;i<a.length;i++){
+			if(a(i).checked==true)
+				return true;
+		}
+		document.getElementById("Message").innerHTML="please select any courses";
+		return false;
+	}
+	
+</script>
+</html>

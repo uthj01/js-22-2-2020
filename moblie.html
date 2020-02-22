@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mobile</title>
+</head>
+<body>
+	<input type="number" id ="a">
+	<input type="button" value="click" onclick="ans()">
+	<p id="demo"></p>
+
+</body>
+<script>
+	function  ans(){
+		a=document.getElementById('a').value;
+		if(a.length==""){
+			document.getElementById("demo").innerHTML="fill input field";
+		}
+		else if(a.length>10||a.length<10){
+			document.getElementById("demo").innerHTML="it contains 10 digits";
+		}
+		else if(a[0]==6 || a[0]==7 || a[0]==8 || a[0]==9){
+		document.getElementById("demo").innerHTML="the number is valid";	
+		}
+		else if{
+			document.getElementById("demo").innerHTML="enter a valid number";
+		}
+	}
+</script>
+</html>
